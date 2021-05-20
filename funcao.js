@@ -1,3 +1,9 @@
+// Mascara do telefone
+
+$(document).ready(function(){
+  $("#ifone").mask("(99) 99999-9999");
+})
+
 function addNewContact(){
     //Permitir a manipulação do Submit
     event.preventDefault();
