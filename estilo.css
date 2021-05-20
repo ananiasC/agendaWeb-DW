@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
 
 main{
-    width:32vw;
+    width:80%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    grid:
+      "novoContato agenda" 1fr
+      / 1fr 1fr;
 }
 
 h1{
@@ -12,11 +15,15 @@ h1{
 }
 
 form{
+    grid-area: novoContato;
     background-color: antiquewhite;
     padding-bottom: 10px;
     padding-top: 20px;
     font-family: 'Catamaran', sans-serif;
     font-size: 14pt;
+    float:left;
+    width: 49%;
+    margin-left: 10px;
 }
 
 div{
@@ -25,7 +32,7 @@ div{
 }
 
 small{
-   color:green; 
+   color:green;
 }
 
 input{
@@ -33,12 +40,18 @@ input{
 }
 
 div#listagem{
+    grid-area: agenda;
     background-color: lightsalmon;
-    margin-left: auto;
-    height: 200px;
+    margin-left: 10px;
+    height: 345px;
     overflow-y: scroll;
+    float:left;
+    width: 49%;
 }
 
+div h3{
+  margin-left: 5px;
+}
 
 button{
     display: block;
@@ -55,4 +68,8 @@ button:hover{
 img{
     vertical-align: middle;
     margin-left: 3px;
+}
+
+#hrfinal{
+  margin-top: 370px;
 }
