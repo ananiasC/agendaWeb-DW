@@ -21,6 +21,7 @@ function addNewContact(){
     btnRemove.type = "button"
     btnRemove.innerText = "Remover"
     btnRemove.style.display="inline-block"
+    btnRemove.style.float="right"
     btnRemove.setAttribute("onclick","removeContact(this)")
 
     //add o button ao li
